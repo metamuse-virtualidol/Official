@@ -1,0 +1,51 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+.navbar {
+    background-color: #ff69b4;
+}
+.nav-link {
+    color: #fff !important;
+}
+.container {
+    padding: 20px;
+}
+.news-item {
+    margin-bottom: 10px;
+}
+.news-item .card-header {
+    cursor: pointer;
+}
+.btn-light {
+    background-color: #ff69b4;
+    color: #fff !important;
+    border: none;
+}
+.btn-light:hover {
+    background-color: #ff1493;
+    color: #fff;
+}
+#playMusic{
+    color: #fff;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+}

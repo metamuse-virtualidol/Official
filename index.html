@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMuse 公式サイト</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/MetaMuse_idol_icon.JPG">
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">MetaMuse</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Top</a></li>
+                <li class="nav-item"><a class="nav-link" href="#members">Member</a></li>
+                <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sns">SNS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <div class="hero">
+        <h1>MetaMuse</h1>
+        <p>未来のメタバースアイドル、MetaMuseの公式サイトへようこそ！</p>
+    </div>
+
+    <!-- コンテンツ -->
+    <div class="container mt-5">
+        <section id="about">
+            <h2>MetaMuse紹介</h2>
+            <p>MetaMuseはメタバースに存在する架空のアイドルグループです。未来の音楽とパフォーマンスをお届けします。</p>
+            <img src="./assets/img/MetaMuse_Member.JPG" alt="">
+        </section>
+
+        <section id="members">
+            <h2>Member</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/metamuse_idol_member_2.JPEG" class="card-img-top" alt="メンバー1">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna Starling - ルナ・スターリング</h5>
+                            <p>
+                                役割: リーダー <br>
+                                誕生日: 8月15日 <br>
+                                血液型: A型 <br>
+                                身長: 165 cm <br>
+                                趣味: 星を見ること、読書 <br>
+                                特技: ダンス、ピアノ <br>
+                            </p>
+                            <button class="btn btn-light" data-toggle="modal" data-target="#memberModal1">プロフィールを見る</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/metamuse_idol_member_1.JPEG" class="card-img-top" alt="メンバー2">
+                        <div class="card-body">
+                            <h5 class="card-title">Celeste Harmony - セレステ・ハーモニー</h5>
+                            <p>
+                                役割: 音楽担当 <br>
+                                誕生日: 11月30日<br>
+                                血液型: AB型<br>
+                                身長: 162 cm <br>
+                                趣味: 作曲、写真撮影<br>
+                                特技: ギター、ハーモニーを作ること<br>
+                            </p>
+                            <button class="btn btn-light" data-toggle="modal" data-target="#memberModal2">プロフィールを見る</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./assets/img/metamuse_idol_member_3.JPEG" class="card-img-top" alt="メンバー2">
+                        <div class="card-body">
+                            <h5 class="card-title">Aurora Skye - オーロラ・スカイ</h5>
+                            <p>
+                                役割: 元気担当<br>
+                                誕生日: 3月21日<br>
+                                血液型: B型<br>
+                                身長: 158 cm <br>
+                                趣味: スポーツ、アニメ鑑賞<br>
+                                特技: チアリーディング、ボーカル<br>
+                            </p>
+                            <button class="btn btn-light" data-toggle="modal" data-target="#memberModal3">プロフィールを見る</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 他のメンバーも同様に追加 -->
+            </div>
+        </section>
+
+
+        <!-- メンバーのモーダルウィンドウ -->
+        <div class="modal fade" id="memberModal1" tabindex="-1" aria-labelledby="memberModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="memberModalLabel1">Luna Starling</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/img/metamuse_idol_member_2.JPEG" class="img-fluid" alt="メンバー2の画像">
+                        <p>
+                            役割: リーダー <br>
+                            誕生日: 8月15日 <br>
+                            血液型: A型 <br>
+                            身長: 165 cm <br>
+                            趣味: 星を見ること、読書 <br>
+                            特技: ダンス、ピアノ <br>
+                            好きな食べ物: フルーツタルト <br>
+                            特徴: Lunaはグループの優雅で神秘的なリーダー。落ち着いた性格で、メンバーを支える存在です。ダンスとピアノが得意で、その美しい動きと音楽の才能でファンを魅了します。星を見ることが大好きで、いつも夜空を見上げています。
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="memberModal2" tabindex="-1" aria-labelledby="memberModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="memberModalLabel2">Celeste Harmony</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/img/metamuse_idol_member_1.JPEG" class="img-fluid" alt="メンバー2の画像">
+                        <p>
+                            役割: 音楽担当 <br>
+                            誕生日: 11月30日<br>
+                            血液型: AB型<br>
+                            身長: 162 cm <br>
+                            趣味: 作曲、写真撮影<br>
+                            特技: ギター、ハーモニーを作ること<br>
+                            好きな食べ物: 抹茶アイスクリーム<br>
+                            特徴: Celesteは落ち着きがあり、音楽に対する深い愛を持つメンバー。ギターが得意で、自ら作曲も行います。彼女の作る美しいハーモニーはMetaMuseの楽曲に欠かせないものです。写真撮影も趣味としており、メンバーや景色の美しい瞬間を捉えるのが得意です。
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="memberModal3" tabindex="-1" aria-labelledby="memberModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="memberModalLabel3">Aurora Skye</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/img/metamuse_idol_member_3.JPEG" class="img-fluid" alt="メンバー2の画像">
+                        <p>
+                            役割: 元気担当<br>
+                            誕生日: 3月21日<br>
+                            血液型: B型<br>
+                            身長: 158 cm <br>
+                            趣味: スポーツ、アニメ鑑賞<br>
+                            特技: チアリーディング、ボーカル<br>
+                            好きな食べ物: チョコレート<br>
+                            特徴: Auroraは活発で明るい性格の元気担当。いつもエネルギッシュで、メンバーやファンを元気づける存在です。チアリーディングが得意で、ステージ上ではそのパフォーマンスで観客を盛り上げます。アニメが大好きで、休日はよくアニメを観ています。
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 他のメンバーのモーダルも同様に追加 -->
+
+        <section id="news">
+            <h2>News</h2>
+            <p>最新のニュースやリリース情報をここに表示します。</p>
+            <div class="accordion" id="newsAccordion">
+                <!-- News Item 1 -->
+                <div class="card">
+                    <div class="card-header" id="headingthree">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                MetaMuse、セカンドアルバム「終電間際」をリリース
+                            </button>
+                        </h3>
+                    </div>
+        
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingthree" data-parent="#newsAccordion">
+                        <div class="card-body">
+                            <p>
+                                MetaMuseが新たにリリースするシングル「終電間際」は、静かな夜の駅を舞台にしたエモーショナルな楽曲です。この曲では、終電間際のホームでの出会いと、心に刻まれる特別な瞬間が描かれています。
+                                夜風に包まれたプラットフォームで交わされる約束と、未来への希望が込められた歌詞が特徴です。
+                                「終電間際」は、リスナーに心の奥深くに響くメロディと共に、忘れられない夜の思い出を届けます。MetaMuseのメンバーが奏でる音楽が、夜の静けさと共鳴し、聴く者の心を温かく包みます。                        
+                                </p>
+                            <button class="btn btn-light"><a href="./music.html#album6" id="playMusic">音楽を再生する</a></button>
+                            <button class="btn btn-light"><a href="https://suno.com/song/b68582a8-b92a-44d1-8347-ab1f36af5d78" target="_blank" id="playMusic">Sunoで聞く</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 2 -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                MetaMuse、待望のファーストアルバム「星の旅路」をリリースしました。
+                            </button>
+                        </h3>
+                    </div>
+        
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#newsAccordion">
+                        <div class="card-body">
+                            <p>
+                                2024年7月7日、メタバースアイドルグループMetaMuseが、ファーストシングル「星の旅路」をリリースしました。
+                                このアルバムは、彼女たちの独自の世界観を音楽で表現し、リスナーを幻想的な旅へと誘います。
+                                「星の旅路」には、MetaMuseの魅力が詰まっています。
+                                リーダーのルナ・スターリング、元気担当のオーロラ・スカイ、音楽担当のセレステ・ハーモニーの個性が光る楽曲が揃い、未来感溢れるサウンドと共に、心に響く歌詞が特徴です。                            
+                            </p>
+                            <button class="btn btn-light"><a href="./music.html#album1" id="playMusic">音楽を再生する</a></button>
+                            <button class="btn btn-light"><a href="https://suno.com/song/f4f6029c-eb03-4ec8-a357-5df111ee3edd" target="_blank" id="playMusic">Sunoで聞く</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Item 3 -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                MetaMuse、メタバースの新星誕生！2024年7月7日にグループ結成
+                            </button>
+                        </h3>
+                    </div>
+        
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#newsAccordion">
+                        <div class="card-body">
+                            <p>
+                                MetaMuseが2024年7月7日に誕生しました。この新たなメタバースアイドルグループは、リーダーのルナ・スターリングを中心に、オーロラ・スカイとセレステ・ハーモニーが加わりました。彼女たちは独自の音楽性と共に、デジタル空間での新たな旅を始めます。
+                                MetaMuseはそれぞれが持つ異なる個性と才能を結集し、未来への音楽的探求を目指します。グループのファーストシングル「星の旅路」は、夏の新たなサウンドトラックとして期待され、全世界のリスナーに届けられる予定です。
+                                MetaMuseの公式ウェブサイトやSNSを通じて、彼女たちの最新情報やアルバムリリースに関する詳細をお楽しみください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="./news.html" class="btn btn-primary">もっと見る</a>
+                </div>
+        
+                <!-- Add more news items as needed -->
+            </div>
+        </section>
+
+        <section id="music">
+            <h2>Music</h2>
+            <p>MetaMuseの楽曲を公式サイトで無料で配信中！</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="./music.html#album1">
+                        <img src="./assets/img/星の旅路.png" alt="ギャラリー1">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="./music.html#album2">
+                        <img src="./assets/img/UFOLIVE.png" alt="ギャラリー2">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="./music.html#album3">
+                        <img src="./assets/img/未来都市.png" alt="ギャラリー3">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="./music.html#album4">
+                        <img src="./assets/img/宇宙旅行.png" alt="ギャラリー4">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="./music.html#album5">
+                        <img src="./assets/img/ネオン街.png" alt="ギャラリー5">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="./music.html#album6">
+                        <img src="./assets/img/終電間際.png" alt="ギャラリー6">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="./music.html#album7">
+                        <img src="./assets/img/始発電車.png" alt="ギャラリー7">
+                    </a>
+                </div>
+                
+                <!-- 他の画像も同様に追加 -->
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>ファンからのアートやメッセージをここに表示します。</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./assets/img/MetaMuse_idol_icon.JPG" alt="ギャラリー1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/img/metamuse_idol_member_2.JPEG" alt="ギャラリー2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/img/metamuse_idol_member_1.JPEG" alt="ギャラリー3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/img/metamuse_idol_member_3.JPEG" alt="ギャラリー4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/img/MetaMuse_Member.JPG" alt="ギャラリー4">
+                </div>
+                <!-- 他の画像も同様に追加 -->
+        </section>
+
+        <section id="sns">
+            <h2>SNS</h2>
+            <!-- <p>Follow us</p> -->
+            <!-- SNSセクション -->
+            <div class="sns-section">
+                <a href="https://x.com/MetaMuse_Idol" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@MetaMuse_Idol" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/MetaMuse_idol" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xanwnjdz" method="post">
+                <div class="form-group">
+                    <label for="name">名前</label>
+                    <input name="name" type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">件名</label>
+                    <input name="subject" type="subject" class="form-control" id="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input name="email" type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light" id="contactForm">送信</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 MetaMuse. All rights reserved. Created by <a href="https://chatgpt.com/" target="_blank">ChatGPT</a>.</p>
+        </footer>
+    </div>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

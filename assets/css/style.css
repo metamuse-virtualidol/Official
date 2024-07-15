@@ -1,0 +1,151 @@
+body {
+    font-family: 'Montserrat', sans-serif !important; 
+    background-color: #fff;
+    color: #333;
+}
+.navbar {
+    background-color: #ff69b4;
+}
+.nav-link {
+    color: #fff !important;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ff69b4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#about img{
+    width: 100%;
+}
+
+.hero {
+    background: url('../img/MetaMuse_idol_icon.JPG') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    background-color: #ff69b4;
+}
+.hero h1 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 166, 231, 0.8); /* テキストシャドウを追加 */
+}
+.hero p {
+    text-shadow: 0 0 5px rgba(255, 166, 231, 0.8); /* テキストシャドウを追加 */
+}
+.btn-light {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+}
+.btn-light:hover {
+    background-color: #ff1493;
+    color: #fff;
+}
+.modal-header, .modal-footer {
+    background-color: #ff69b4;
+    color: white;
+}
+section{
+    padding: 30px;
+}
+.gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+.gallery-item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.accordion-item {
+    margin-bottom: 20px;
+}
+.accordion-item .card-header {
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+}
+.accordion-item .card-header h2 {
+    margin-bottom: 0;
+}
+.accordion-item .card-body {
+    display: none;
+}
+.btn{
+    text-decoration: none;
+}
+#playMusic{
+    color: #fff;
+}
+.music-item{
+    padding: 20px;
+}
+.music-item img:hover {
+    transform: scale(1.1);
+}
+.sns-section {
+    text-align: left;
+    padding: 10px 0;
+}
+.sns-section a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 2em;
+    color: #ff69b4;
+    transition: color 0.3s ease;
+}
+.sns-section a:hover {
+    color: #333;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+    border-radius: 100%; /* 丸くするための設定 */
+}
+.back-to-top:hover {
+    background-color: #ff1493;
+}
+footer{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 500px;
+        padding-top: 200px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+}

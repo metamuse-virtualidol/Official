@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+.navbar {
+    background-color: #ff69b4;
+}
+.nav-link {
+    color: #fff !important;
+}
+.hero {
+    /* background: url('/assets/img/MetaMuse_idol_icon.JPG') no-repeat center center; */
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    background-color: #ff69b4;
+}
+.hero h1 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 166, 231, 0.8); /* テキストシャドウを追加 */
+}
+.hero p {
+    text-shadow: 0 0 5px rgba(255, 166, 231, 0.8); /* テキストシャドウを追加 */
+}
+.music-section {
+    margin-top: 20px;
+}
+.music-card {
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: #ff69b4;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #ff1493;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+    border-radius: 100%; /* 丸くするための設定 */
+}
+.back-to-top:hover {
+    background-color: #ff1493;
+}
+footer{
+    text-align: center;
+}
