@@ -27,3 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// 訪問数カウンター
+function updateVisitCounter() {
+    const visitCounter = document.getElementById('visitCounter');
+    let visits = localStorage.getItem('visits');
+    if (!visits) {
+        visits = 0;
+    }
+    visits++;
+    localStorage.setItem('visits', visits);
+    visitCounter.textContent = `Visits: ${visits}`;
+}
+updateVisitCounter();

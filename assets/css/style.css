@@ -49,6 +49,12 @@ h2::after {
 .hero p {
     text-shadow: 0 0 5px rgba(255, 166, 231, 0.8); /* テキストシャドウを追加 */
 }
+.counter {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #ff69b4;
+}
 .btn-light {
     background-color: #ff69b4;
     color: #fff;
