@@ -27,3 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// ページ読み込み時に最新ニュースにスクロール
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("latest-news").scrollIntoView();
+});
