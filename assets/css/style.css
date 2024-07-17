@@ -2,10 +2,16 @@ body {
     font-family: 'Montserrat', sans-serif !important; 
     background-color: #fff;
     color: #333;
+    padding-top: 56px;
 }
 .navbar {
     background-color: #ff69b4;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 .nav-link {
     color: #fff !important;
 }
